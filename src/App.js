@@ -1,11 +1,11 @@
 import './App.css';
-import Counter from './components/counter/Counter';
+import TodoApp from './components/todo/TodoApp'
 
 // We need {} for precise component. If no braces, default export.
 function App() {
   return (
     <div className="App">
-      <Counter/>
+      <TodoApp />
     </div>
   );
 }
