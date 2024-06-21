@@ -1,5 +1,5 @@
 import './App.css';
-import TodoApp from './components/todo/TodoApp'
+import TodoApp, { LoginComponent, WelcomeComponent } from './components/todo/TodoApp'
 
 // We need {} for precise component. If no braces, default export.
 function App() {
