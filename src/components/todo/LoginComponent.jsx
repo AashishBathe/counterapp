@@ -4,7 +4,7 @@ import './TodoApp.css'
 import { useAuth } from './security/AuthContext';
 export function LoginComponent() {
 
-    const [username, setUsername] = useState("Aashish");
+    const [username, setUsername] = useState("aashish");
     const [password, setPassword] = useState("");
     const [showError, setShowError] = useState(false);
     const navigate = useNavigate();
@@ -18,8 +18,8 @@ export function LoginComponent() {
         setPassword(event.target.value);
     }
 
-    function handleSubmit() {
-        if (authContext.login(username, password)) {
+    async function handleSubmit() {
+        if (await authContext.login(username, password)) {
             navigate(`/welcome/${username}`);
         }
         else {

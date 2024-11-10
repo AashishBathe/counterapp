@@ -16,12 +16,12 @@ export function HeaderComponent() {
                 <div className="row">
                     <nav className="navbar navbar-expand-lg">
                         <Link className="navbar-brand ms-2 fs-2 fw-bold text-black" to="/">
-                            Aashish
+                            {authContext.username}
                         </Link>
                         <div className="collapse navbar-collapse">
                             <ul className="navbar-nav">
                                 <li className="nav-item fs-5">
-                                    {isAuthenticated && <Link className="nav-link" to="/welcome/Aashish">Home</Link>}
+                                    {isAuthenticated && <Link className="nav-link" to="/welcome/aashish">Home</Link>}
                                 </li>
                                 <li className="nav-item fs-5">
                                 {isAuthenticated && <Link className="nav-link" to="/todos">Todos</Link>}
